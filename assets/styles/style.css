@@ -178,10 +178,23 @@ aside {
     margin: 3% auto;
 }
 
-tr th {
+#profile tr > th {
+    width: 50%;
     vertical-align: top;
-    text-align: left;
+    text-align: right;
     padding-right: 8px;
+}
+
+#profile tr:first-child > th {
+    padding-right: 40px;
+}
+
+#profile tr:nth-child(2) > th {
+    padding-right: 54px;
+}
+
+#profile tr:last-child > th {
+    padding-right: 21px;
 }
 
 #profile tr > td:last-child {
