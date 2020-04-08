@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    background: rgba(255,255,255,.95294);
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+}
+
+.is-hidden {
+    transform: translateY(-100%);
+    box-shadow: none;
+}
+
+.is-visible {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+nav ul {
+    text-align: right;
+    padding: 0 1% 0 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.jumbotron {
+    padding: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    background: linear-gradient(180deg, #fff 2%, #Efefef 98%);
+}
+
+main {
+    overflow: auto;
+    padding: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+#experience {
+    margin: 69px 0 10% 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+#experience > h2 {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#experience > table tr {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#experience .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#bit {
+    display: flex;
+    flex-direction: row;
+}
+
+#idgw {
+    display: flex;
+    flex-direction: row;
+    margin-left: -4px;
+}
+
+.remark {
+    flex-grow: 1;
+    min-width: 10px;
+    height: 2px;
+    margin: auto -1px;
+    border: 2px solid #4d4d4d;
+}
+
+.border-left {
+    border-left: 2px solid #4d4d4d;
+}
+
+.border-right {
+    border-right: 2px solid #4d4d4d;
+}
+
+#experience img {
+    width: 80%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.date {
+    margin-bottom: 10px;
+}
+
+.company {
+    margin-top: 5px;
+}
+
+.position {
+    color: grey;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+#profile header {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+}
+
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#profile figure {
+    margin: 0;
+}
+
+#profile img {
+    display: block;
+    width: 150px;
+    /* height: 165px; */
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#profile table {
+    margin: 3% auto;
+}
+
+tr th {
+    vertical-align: top;
+    text-align: left;
+    padding-right: 8px;
+}
+
+#profile tr > td:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+footer {
+    padding: 10px 0 20px 0;
+    background: #4d4d4d;
+}
+
+footer > section:nth-child(1) {
+    margin: 0 auto 0.7rem auto;
+}
+
+footer > section span {
+    color: #fff;
+}
+
+.social-media {
+    flex-grow: 5;
+}
+
+a:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+i:hover {
+    cursor: pointer;
+    font-size: 1.9rem;
+}
+
+@media screen and (max-width: 320px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #content, aside {
+        width: 100%;
+    }
+}
